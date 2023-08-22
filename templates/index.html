@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collect Information</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="user_name">Enter your name:</label>
+        <input type="text" id="user_name" name="user_name" required><br><br>
+
+        <label for="sections">Select sections:</label><br>
+        {% for section, _ in sections.items() %}
+        <input type="checkbox" id="{{ section }}" name="sections" value="{{ section }}">
+        <label for="{{ section }}">{{ section }}</label><br>
+        {% endfor %}
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
