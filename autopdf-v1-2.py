@@ -92,3 +92,4 @@ if __name__ == "__main__":
 
 # Version 1.2 Release notes:
 #only works locally. This will be used as the base code with plans to eventually build a GUI to accept user input to feed data to the above program. To be hosted on Raspberry Pi
+#Orginal use case is for Advisor Onboarding Presentation built over 2022-2023
