@@ -22,15 +22,10 @@ def index():
         user_name = request.form['user_name']
         selected_sections = request.form.getlist('sections')
 
-        # Define the paths (or fetch from another source if necessary)
-        ppt_file = r"C:\Users\Douglas Haught\Desktop\GitHub\repositories\autoPDFBuilder\reference\advisorOnboardingMaster.pptx"
-        output_folder = r"C:\Users\Douglas Haught\Desktop\GitHub\repositories\autoPDFBuilder\output"
-
-        # Call the function
-        convert_ppt_to_pdf(ppt_file, output_folder, selected_sections, user_name)
+        # Now, call your convert_ppt_to_pdf function here with these details
+        # convert_ppt_to_pdf(ppt_file, output_folder, selected_sections, user_name)
 
         return redirect(url_for('success'))
-
 
     return render_template('index.html', sections=sections)
 
