@@ -23,8 +23,8 @@ def index():
         selected_sections = request.form.getlist('sections')
 
         # Define the paths (or fetch from another source if necessary)
-        ppt_file = r"C:\Program Files\Python311\gitRepositories\autoPDFBuilder\reference\advisorOnboardingMaster.pptx"
-        output_folder = r"C:\Program Files\Python311\gitRepositories\autoPDFBuilder\output"
+        ppt_file = r"C:\Users\Douglas Haught\AppData\Roaming\Python\Python311\gitRepositories\autoPDFBuilder\reference\advisorOnboardingMaster.pptx"
+        output_folder = r"C:\Users\Douglas Haught\AppData\Roaming\Python\Python311\gitRepositories\autoPDFBuilder\output"
 
         # Call the function
         convert_ppt_to_pdf(ppt_file, output_folder, selected_sections, user_name)
